@@ -4,31 +4,37 @@ body{
 }
 
 
-#hero-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.section#above-fold {
-    display: flex;
-    height: 60vh;
-    background-color: #1f2937;
-}
-
-.hero-image {
-    width: auto;
-    height: 240px;
-
-}
-
+/*   Sections  */
 
 .section#hero-section {
     background-color: #1f2937;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+#section-2 {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 16px;
+    gap: 16px;
+ }
+
+ #quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e5e7eb;
+    height: 60vh;
+
+ }
+
+/*   Conatiners  */
 
 .container {
     display: flex;
@@ -36,14 +42,100 @@ body{
 }
 
 
+.container#section-2-content {
+    width: 75%;
+}
+
+
+#hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    flex-grow: 1;
+}
+
+#hero-container {
+    border-style: dashed;
+    border-color: white;
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+
+ }
+
+
+ #quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+
+    gap: 8px;
+    width: 50%;
+
+ }
+
+/*   Text  */
+
+
 h1 {
     font-size: 48px;
     color: #f9faf8;
     font-weight: extra-bold;
+    font-family: sans-serif;
+    margin-top: 0px;
 }
+
+h2 {
+    font-size: 32;
+    color: #1f2937;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+h3 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+
 
 p {
     color: #f9faf8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+p.promo-body {
+    color: #9e9e9e;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+p.quote-credit {
+    text-align: right;
+    color: #1f2937;
+}
+
+
+
+
+/*   Other Components  */
+
+.hero-image {
+    width: 100%;
+    max-height: 320px;
+
 }
 
 button.primary-cta {
@@ -57,3 +149,10 @@ button.primary-cta {
     background-color: #3882f6;
     color: whitesmoke;
 }
+
+.promo-image {
+    width: 50%;
+}
+ 
+
+
